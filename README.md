@@ -32,78 +32,82 @@ It shows real-world collaboration techniques — how developers use **branches, 
 
 ---
 
+## ⚙️ Git Workflow Demonstration (with Screenshots)
+
+### 🪜 Step 1 — Push Existing Flask Project to New GitHub Repo (main)
+![Initial Repository Setup & Push to main](./images/Screenshot%202025-12-11%20000701.png)
 
 ---
 
-## ⚙️ Git Workflow Demonstration
-
-### 🪜 Step 1 — Initialize Repository  
-![Initial Repository Setup](./images/Screenshot%202025-12-11%20000701.png)
+### 🌿 Step 2 — Create `dev` Branch and Commit Flask Project Files
+![Create dev branch and first dev commit](./images/Screenshot%202025-12-11%20000822.png)
 
 ---
 
-### 🌿 Step 2 — Create Master Branch  
-![Master Branch Created](./images/1master_branch.png)
+### 🌿 Step 3 — Merge `dev` into `main` and Prepare for API Work
+> Merge `dev` → `main`, then create a new branch for API work.
+
+![Merge dev into main and prepare next branch](./images/Screenshot%202025-12-11%20001101.png)
 
 ---
 
-### 🧩 Step 3 — Add Code and First Commit  
-![Initial Commits](./images/Screenshot%202025-12-11%20000822.png)
+### 🌿 Step 4 — Create `apis`, Commit JSON Data, Merge Back into `main` & Create `master_1` / `master_2`
+> Work in `apis` branch, then merge it into `main`. After that, create `master_1` and `master_2` branches for separate features.
+
+![Work with apis branch and create master_1, master_2](./images/Screenshot%202025-12-11%20001411.png)
 
 ---
 
-### 🧠 Step 4 — Create and Switch to master1 Branch  
-![master1 Branch](./images/Screenshot%202025-12-11%20001101.png)
+### ☁️ Step 5 — List All Branches and Push `master_1` to GitHub
+![Push master_1 branch to GitHub](./images/Screenshot%202025-12-11%20001528.png)
 
 ---
 
-### 🧠 Step 5 — Create and Switch to master2 Branch  
-![master2 Branch](./images/Screenshot%202025-12-11%20001411.png)
+### 📝 Step 6 — Edit To-Do Form in `master_1` (HTML Changes)
+> Update `templates/todo.html` in `master_1` to add more fields to the To-Do form.
+
+![Editing To-Do HTML form in master_1](./images/Screenshot%202025-12-11%20001727.png)
 
 ---
 
-### 🧠 Step 6 — Work in master1 Branch and Commit Changes  
-![Commits in master1](./images/Screenshot%202025-12-11%20001528.png)
+### 🔄 Step 7 — Rebase `master_1` on Top of Latest `main`
+> Bring `master_1` up to date with `main` using `git rebase main`.
+
+![Rebasing master_1 onto main](./images/Screenshot%202025-12-11%20002441.png)
 
 ---
 
-### 🧠 Step 7 — Work in master2 Branch and Commit Changes  
-![Commits in master2](./images/Screenshot%202025-12-11%20001727.png)
+### 🔀 Step 8 — Commit Enhanced Form in `master_1` and Merge into `main`
+> Commit updated form in `master_1`, push it, then merge into `main` and push again.
+
+![Commit enhanced form and merge master_1 into main](./images/Screenshot%202025-12-11%20002516.png)
 
 ---
 
-### 🔀 Step 8 — Merge master1 and master2 into main Branch  
-![Merge master1 & master2](./images/master_1and2_merge_to_main_branch.png)
+### 💻 Step 9 — Update Backend Route in `master_2` (API Logic)
+> Edit `api/routes.py` in `master_2` to enhance the backend `/submittodoitem` route.
+
+![Editing backend routes in master_2](./images/Screenshot%202025-12-11%20002929.png)
 
 ---
 
-### ⚔️ Step 9 — Resolve Merge Conflicts  
-![Merge Conflicts](./images/merge_master1_branch_conflicsts_to_main_branch.png)
+### 🔀 Step 10 — Merge `master_2` into `main` and Push Final Changes
+> Push `master_2`, then merge it into `main` and push to GitHub.
+
+![Merge master_2 into main and push final changes](./images/Screenshot%202025-12-11%20003131.png)
 
 ---
 
-### 🔄 Step 10 — Perform Git Rebase  
-![Rebase Process](./images/Screenshot%202025-12-11%20002516.png)
+## 🔍 Extra Visuals — Git Branch Graphs
 
----
+### 🌳 Git Graph — Branch Overview
+![Git Graph: Branch Overview](./images/1master_branch.png)
 
-### ☁️ Step 11 — Push Changes to GitHub  
-![Push Branches](./images/Screenshot%202025-12-11%20002625.png)
+### 🌳 Git Graph — `master_1` and `master_2` Merged into `main`
+![Git Graph: master_1 and master_2 merge](./images/master_1and2_merge_to_main_branch.png)
 
----
-
-### 🧹 Step 12 — Delete Merged Branches  
-![Delete Branches](./images/Screenshot%202025-12-11%20002940.png)
-
----
-
-### 🧩 Step 13 — Git Workflow Visualization  
-![Git Workflow Overview](./images/Screenshot%202025-12-11%20002441.png)
-
----
-
-### 🧠 Step 14 — Final Branch Merge Confirmation  
-![Final Merge Result](./images/Screenshot%202025-12-11%20003133.png)
+### ⚔️ Git Graph — Merge Conflicts While Merging `master_1`
+![Git Graph: merge conflict example](./images/merge_master1_branch_conflicsts_to_main_branch.png)
 
 ---
 
@@ -124,7 +128,7 @@ It shows real-world collaboration techniques — how developers use **branches, 
 ## 🌳 Branch Naming Convention
 
 | Type | Prefix | Example |
-|------|---------|----------|
+|------|--------|---------|
 | Main Branch | `main` | `main` |
 | Feature Branch | `feature/` | `feature/add-task` |
 | Fix Branch | `fix/` | `fix/typo-bug` |
@@ -156,13 +160,6 @@ By following this project, you’ll learn:
 
 ---
 
-## 🏁 Final Result
-
-### ✅ Flask To-Do App Interface  
-![Final Flask UI](./images/Screenshot%202025-12-11%20001727.png)
-
----
-
 ## 📜 License
 
 This project is open source under the **MIT License**.
@@ -174,4 +171,3 @@ This project is open source under the **MIT License**.
   <br>
   <sub>Built with ❤️ by <a href="https://github.com/ankurchouhan">Ankur Chouhan</a> • 2025</sub>
 </p>
-
