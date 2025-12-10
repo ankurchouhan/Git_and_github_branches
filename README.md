@@ -73,7 +73,7 @@ It simulates a professional development setup with **multiple branches**, **merg
 
 ---
 
-## 💡 Learning Outcomes
+## 💡 CI/ CD Deployments for Team Collabs
 
 By completing this project, you’ll master:
 
