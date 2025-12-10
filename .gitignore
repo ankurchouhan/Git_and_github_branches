@@ -1,0 +1,49 @@
+# 🐍 Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# 🚫 Virtual environment
+venv/
+env/
+ENV/
+.venv/
+.Python
+
+# 🔧 VS Code and IDEs
+.vscode/
+.idea/
+
+# 📦 OS Files
+.DS_Store
+Thumbs.db
+
+# Test & Build
+dist/
+build/
+.eggs/
+.coverage
+.pytest_cache/
+htmlcov/
+
+# Data & Cache
+*.sqlite3
+*.db
+instance/
+*.bak
+*.tmp
+*.swp
+*.swo
+
+# Flask/Mongo/Config
+config.json
+data/*.json
+
+#  Optional: Ignore local settings
+*.env
+.env
