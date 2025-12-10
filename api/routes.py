@@ -27,4 +27,7 @@ def submit_todo_item():
         file.seek(0)
         json.dump(todos, file, indent=4)
 
-    return jsonify({"message": "Item added successfully", "item": new_item}), 201
+    # Insert into MongoDB
+    todos_collection.insert_one(todo_item)
+
+    return jsonify({"message": "Item added successfully!", "item": todo_item}), 201
