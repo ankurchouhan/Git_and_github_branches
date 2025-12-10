@@ -73,9 +73,9 @@ It simulates a professional development setup with **multiple branches**, **merg
 
 ---
 
-## 💡 CI/ CD Deployments for Team Collabs
-
-By completing this project, you’ll master:
+## 💡 CI/CD Deployments for Team Collaborations
+This project provides a scalable CI/CD pipeline setup designed to simplify team-based development workflows. 
+It integrates continuous integration, testing, and automated deployment for collaborative projects hosted on GitHub.
 
 - ✅ Branch creation & version isolation  
 - ✅ Rebasing for a clean commit history  
