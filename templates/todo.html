@@ -1,20 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>To-Do Page</title>
-</head>
-<body>
-  <h1>To-Do List</h1>
-  <form id="todoForm">
-    <label>Item Name:</label><br>
-    <input type="text" id="itemName" required><br><br>
+<form id="todoForm">
+  <label>Item Name:</label><br>
+  <input type="text" id="itemName" required><br><br>
 
-    <label>Item Description:</label><br>
-    <textarea id="itemDescription" required></textarea><br><br>
+  <label>Item Description:</label><br>
+  <textarea id="itemDescription" required></textarea><br><br>
 
-    <button type="submit">Submit</button>
-  </form>
+  <label>Item ID:</label><br>
+  <input type="text" id="itemID"><br><br>
+
+  <label>Item UUID:</label><br>
+  <input type="text" id="itemUUID"><br><br>
+
+  <label>Item Hash:</label><br>
+  <input type="text" id="itemHash"><br><br>
+
+  <button type="submit">Submit</button>
+</form>
+>
 
   <script>
     document.getElementById('todoForm').addEventListener('submit', async (e) => {
