@@ -98,15 +98,6 @@ By completing this project, you’ll master:
 
 ---
 
-## 🏁 Final Output
-
-### ✅ Flask To-Do App and Final Git Structure
-<p align="center">
-  <img src="./images/Screenshot%202025-12-11%20001727.png" alt="Final Flask App Git View" width="80%">
-</p>
-
----
-
 <p align="center">
   ⭐ <b>If you found this project helpful, please star the repository!</b> ⭐  
   <br><br>
